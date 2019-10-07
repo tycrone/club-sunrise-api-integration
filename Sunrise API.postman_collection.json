@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "cbeb7f38-589b-4183-8eab-167eced08658",
+		"name": "Sunrise API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Request token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"grant_type\": \"client_credentials\",\n  \"client_id\": 1,\n  \"client_secret\": \"TvR6Z23aHdXOjwsBwCZ0QbcTHLos6vFA9ngeHXYM\",\n  \"scope\": \"*\"\n}"
+				},
+				"url": {
+					"raw": "https://receiptsus.loyaltyplatform.net/oauth/token",
+					"protocol": "https",
+					"host": [
+						"receiptsus",
+						"loyaltyplatform",
+						"net"
+					],
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get customer stamps",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjM0YWI4NTg3OThjMjhiMzlkNTRlZjQxYmE5NmRjYThiYzkwODRkZTEyODg2YjdmNDJmMzg5NGQ1MmMyMjJjNzkzOTU0ZTk4NWE2NTczZjZmIn0.eyJhdWQiOiIxIiwianRpIjoiMzRhYjg1ODc5OGMyOGIzOWQ1NGVmNDFiYTk2ZGNhOGJjOTA4NGRlMTI4ODZiN2Y0MmYzODk0ZDUyYzIyMmM3OTM5NTRlOTg1YTY1NzNmNmYiLCJpYXQiOjE1NDM4ODcwMDIsIm5iZiI6MTU0Mzg4NzAwMiwiZXhwIjoxNTc1NDIzMDAyLCJzdWIiOiIiLCJzY29wZXMiOltdfQ.iSbS7kaMoaENCAQjrW4PMkvCqP8pi7qa6fKXEMzWdQJkXcXJKX5pIhnxIISb4Udo_4ip__Uq0z9STKp26TL7Kj8Cp1hj7uxokxjc50IdtTercA32R1HWndCeqWYBr1QIVGSr5ByJVh49VQlcwm2EXVq0ll8LQlQelb05MIcmh0oLE4yJ5xA-wIEnHaegYVGn0JhjoyEWaeIxDF_UWlzUZJgtziUtYEf-zBBEeeGg3pdZcT6lDl_6tqOpNgVq1LZ0eBCcEhbJv2sz7TsScHigLNfHtx0UI0hV03bVb5pBods0wI-ieKCmH2xsOj81GQyQyiFCf7Cklw8di60ozm97bTTZRpnKbqLZ_0y9bw9oC23fWmgpqrrHjZ7JCWxhlQcqSFa1iMr7FOg3CQ_VHTdPlfbqg-rRSJkqdn0JULOZUbc6Q9864zBP9pmu5zDXkQWG4Tdhx1GdO8WMP9JuvswSDnHiN_dgkpgMlFlATsgAX9OP6HETkRey4Chre-fTTGZqytfdI3w13Jh8srF33DSWzb5AcSWzOqAdVZBDsjQxia9af4Wbl6OLkxaf7RM8GGbBkLX2UCdm5obwl_nmKD14BCEDWS3C3hEylHMqztib-YXShtW94KlIswSffENGC5XTOIysRe7X6tIuGhW5sg6Nzleg9UZMZ1-89kb5fVqpSJI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://receiptsus.loyaltyplatform.net/api/customers/{email_address}/stamps",
+					"protocol": "https",
+					"host": [
+						"receiptsus",
+						"loyaltyplatform",
+						"net"
+					],
+					"path": [
+						"api",
+						"customers",
+						"{email_address}",
+						"stamps"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

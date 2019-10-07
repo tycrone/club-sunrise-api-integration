@@ -1,0 +1,206 @@
+body{
+	background-color:#e1e1e1;
+}
+#container{
+	width:100%;
+	display:block;
+}
+.account-cont{
+	padding:40px 20px;
+	background-color:#f9f9f9;
+	border:1px solid #cccccc;
+}
+.account-p-1{
+	text-align:center;
+    font-size:24px;
+	line-height:1.2;
+}
+.api-form-cont{
+	text-align:center; 
+}
+.introh2-1{
+	text-align:center;
+	color:#222222;
+	margin:50px 0 0 0;
+	font-size:42px;
+	color:#d31821;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+.introh2-2{
+	text-align:center;
+	color:#222222;
+	margin:0;
+}
+.introh3-1{
+	text-align:center;
+	color:#444444;
+	font-weight:bold;
+	font-size:25px;
+}
+
+.stampcard{
+	background: #ffffff;
+	width:100%;
+	max-width:350px;
+	position:relative;
+	display:block;
+	height:auto;
+	margin:30px auto 0 auto;
+	padding:20px;
+	border:2px solid #e1e1e1;
+}
+.stamp{
+	position: relative;
+	width: 20%;
+ 	height: 0;
+	padding: 10% 0;
+ 	margin: 1em auto;
+ 	border-radius: 50%;
+ 	display:inline-block;
+ 	background:url("../img/stampbg.png") no-repeat center center;
+ 	background-size:100% auto;
+}
+.stamp-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.stamp-inner:before {
+  content: '';
+  vertical-align: middle;
+  display: inline-block;
+  width: 0;
+  height: 100%;
+}
+
+.stamp-inner span {
+  vertical-align: middle;
+  display: inline-block;
+  font-size:12px;
+}
+
+.blank{
+	position: relative;
+	width: 20%;
+ 	height: 0;
+	padding: 10% 0;
+ 	margin: 1em auto;
+ 	border-radius: 50%;
+ 	background:url("../img/blankbg.png") no-repeat center center;
+ 	background-size:100% auto;
+ 	display:inline-block;
+}
+.blank-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.blank-inner:before {
+  content: '';
+  vertical-align: middle;
+  display: inline-block;
+  width: 0;
+  height: 100%;
+}
+
+.blank-inner span {
+  vertical-align: middle;
+  display: inline-block;
+  font-size:12px;
+}
+.filledcardlook{
+	border-color: #d31821!important;
+}
+.fullcard{
+	width:100%; 
+	position:absolute;
+	background:rgba(0,0,0,0.9);
+	z-index:999999999999999999999999999;
+	top: 50%;
+    transform: translateY(-50%);
+    padding:20% 0;
+    margin-left:-20px;
+}
+.fullcard-h2-1{
+	text-align:center;
+	color:#ffffff;
+	font-weight:bold;
+	font-size:29px;
+	margin: auto;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+.fullcard-h2-2{
+	text-align:center;
+	color:#e1e1e1;
+	font-weight:bold;
+	font-size:25px;
+	margin: auto;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+
+.cardtop{
+	text-align:center;
+}
+.tally-h2{
+}
+
+.filledcardh2{
+	color:#d31821;
+	font-weight:bold;
+}
+.nodata-h2-1{
+	text-align:center;
+	margin:0;
+	font-size:36px;
+}
+.nodata-h2-2{
+	text-align:center;
+	margin:20px 0 0 0;
+	font-size:25px;
+	
+}
+.rewardsbase{
+
+}
+.rewardsbase-h2{
+	text-align:center; 
+	color:#d31821;
+}
+.rewardcont{ 
+	max-width:400px;
+	width:100%;
+	padding:15px 0;
+	background:#d31821;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	display: flex;
+	align-items: center;
+	margin:17px auto;
+}
+.rewardcontinner1{
+	width:30%;
+	display:inline-block;
+	text-align:center;
+}
+.rewardcontinner2{
+	width:68%;
+	display:inline-block;	
+	text-align:center;
+}
+.rewardimg{
+	height:100px;
+}
+.reward-h2{
+	text-align:center;
+	color:#ffffff;
+}
